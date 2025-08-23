@@ -15,7 +15,7 @@ public class GoreTesting {
     @Test()
     public void user_create_requestData() throws InterruptedException {
 
-        for (; ; ) {
+        for (int i=0;i<10;i++) {
             String payload = "{\n" +
                     "  \"query\": \"{ users(limit: 5) { id name todos { id } }}\"\n" +
                     "}";
